@@ -17,6 +17,7 @@
     (nightfox-yellow "#08BDBA")
     (nightfox-orange "#3DDBD9")
     (nightfox-cyan   "#33B1FF")
+    (nightfox-pink   "#FF7EB6")
 
     (nightfox-region  "#2a2a2a")
     (nightfox-comment "#525253")
@@ -37,12 +38,24 @@
     (font-lock-comment-face (:foreground nightfox-comment)) ;; comments
     (font-lock-builtin-face (:foreground nightfox-red)) ;; builtin functions
     (font-lock-constant-face (:foreground nightfox-orange)) ;; constants
-    (font-lock-function-name-face (:foreground nightfox-red)) ;; function names
+    (font-lock-function-name-face (:foreground nightfox-blue)) ;; function names
+    (font-lock-preprocessor-face (:foreground nightfox-pink))
+    (font-lock-operator-face (:foreground nightfox-green))
+    ;; END ;;
+
+    ;; General ;;
+    (error (:foreground nightfox-red))
+    (warning (:foreground nightfox-purple))
+    (info (:foreground nightfox-blue))
     ;; END ;;
 
     ;; UI ;;
     (region (:background nightfox-region)) ;; selction background
     (mode-line (:foreground nightfox-fg :background nightfox-bg)) ;; modeline
+    (line-number-current-line (:foreground nightfox-purple))
+    (line-number (:foreground nightfox-comment))
+    
+    ;; (parenthesis (:foreground))
     ;; END ;;
      )
 
